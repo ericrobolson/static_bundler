@@ -1,0 +1,16 @@
+[package]
+name = "static_bundler"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+documentation = "https://docs.rs/static_bundler/latest/static_bundler/"
+description = "A tool to bundle files into a JSON blob with each key representing a file path and the value being the file content."
+repository = "https://github.com/ericrobolson/static_bundler"
+authors = ["Eric Olson <eric@ericrobolson.com>"]
+categories = ["web-programming"]
+keywords = ["static", "bundler", "files", "json"]
+
+[dependencies]
+walkdir = "2.5.0"
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = "1.0.115"
