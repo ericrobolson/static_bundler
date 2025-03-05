@@ -25,3 +25,9 @@ fn main() {
     std::fs::write(DEST_FILE, json_string).unwrap();
 }
 ```
+
+Add to your code:
+```
+let json_blob = include_str!("../.static_files.json");
+let files = static_bundler::decode_static_files(json_blob);
+```

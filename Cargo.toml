@@ -1,6 +1,6 @@
 [package]
 name = "static_bundler"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "MIT"
 documentation = "https://docs.rs/static_bundler/latest/static_bundler/"
@@ -10,7 +10,9 @@ authors = ["Eric Olson <eric@ericrobolson.com>"]
 categories = ["web-programming"]
 keywords = ["static", "bundler", "files", "json"]
 
+
 [dependencies]
 walkdir = "2.5.0"
 serde = { version = "1.0.215", features = ["derive"] }
 serde_json = "1.0.115"
+base64 = "0.22.1"
